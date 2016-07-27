@@ -10,5 +10,9 @@ package com.sv.udb.beans;
  * @author Laboratorio
  */
 public class demo {
+    public demo()
+    {
+        System.err.println("Hola mundo");
+    }
     
 }
