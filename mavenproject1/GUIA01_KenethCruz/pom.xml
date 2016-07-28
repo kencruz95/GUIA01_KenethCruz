@@ -21,6 +21,27 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
+        
+        <!--PARA REPORTES-->
+        <!-- https://mvnrepository.com/artifact/jasperreports/jasperreports -->
+        <dependency>
+            <groupId>jasperreports</groupId>
+            <artifactId>jasperreports</artifactId>
+            <version>3.5.3</version>
+        </dependency>
+        
+        <!--PARA MYSQL-->
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.39</version>
+        </dependency>
+
+        
+
+
+
     </dependencies>
 
     <build>
