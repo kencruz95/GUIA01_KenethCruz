@@ -14,39 +14,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
-    <script type="text/javascript">
-           $(document).ready(function () {
-               $("#frmPiezas").validate();
-           });
-    </script>
-    
-    <script type="text/javascript">
-            $(document).ready(function () {   // Esta parte del código se ejecutará automáticamente cuando la página esté lista.
-                $("#boton").click(function () {     // Con esto establecemos la acción por defecto de nuestro botón de enviar.
-                    if (validaForm()) {                               // Primero validará el formulario.
-                        var cursBton = $(this).val();
-                        var form = $(this).closest("form");
-                        $.ajax({
-                            type: "POST",
-                            url: form.attr('action'),
-                            data: form.serialize() + "&cursBton=" + cursBton,
-                            success: function (response) {
-                                alert('OK');
-                                location.reload();
-                            }
-                        });
-                        event.preventDefault();
-                    }
-                    else {
-                        $("#frmPiezas").submit(function () {
-                            return false;
-                        });
-                    }
-                });
-            });</script>
-    
-    <title>MANTENIMIENTO PIEZAS</title>
-    
+    <title>GUIA 1 POO</title>
+     
      <!-- Normalize CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     
@@ -125,28 +94,25 @@
                 
                 
                 <br><br>
-                <form class="col s12" name="frmPiezas" id="frmPiezas" method="POST" action="PiezasServ">
-                    <input type="hidden" name="CodiPiez" value="${CodiPiez}"/>
+                <form class="" method="post" action="DatosReportes/report2.jsp" target="_blank">
                     
-               
                 <div class="row">
                     <div class="input-field col s12">
                         <center>Selecione la persona :</center>
                         <br><br>
-                            <select class="browser-default" name="cmbPiez">
-                                <!-- jsp:useBean id="beanPiezasCtrl" class="com.sv.udb.controlador.PiezasCtrl" scope="page"/>-->
-                               
-                                <c:forEach items="${beanPiezasCtrl.consTodo()}" var="fila">
-                                    <c:choose>
-                                        <c:when test="${fila.codiPiez eq cmbPiez}">
-                                            <option name="codi_piez" value="${fila.codiPiez}" selected="">${fila.nombPiez}</option>
-                                        </c:when>
-                                        <c:otherwise>
-                                    <option name="codi_piez" value="${fila.codiPiez}">${fila.nombPiez}</option>
-                                        </c:otherwise>
-                                    </c:choose>
-                                </c:forEach>
-                            </select>
+                        <select class="browser-default"  name="cmbPersona" id="cmbPersona">
+                            <jsp:useBean id="beanPersonaCtrl" class="com.sv.udb.controlador.PersonaCtrl" scope="page"/>
+                            <c:forEach items="${beanPersonaCtrl.consTodo()}" var="fila">
+                                <c:choose>
+                                    <c:when test="${fila.codiPers eq cmbPersona}">
+                                        <option name="codi_pers" value="${fila.codiPers}" selected="">${fila.nombPers} ${fila.apelPers} - ${fila.duiPers}</option>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <option name="codi_pers" value="${fila.codiPers}">${fila.nombPers} ${fila.apelPers} - ${fila.duiPers}</option>
+                                    </c:otherwise>
+                                </c:choose>
+                            </c:forEach>
+                        </select>
                     </div>
                 </div>
                         <br><br><br>
