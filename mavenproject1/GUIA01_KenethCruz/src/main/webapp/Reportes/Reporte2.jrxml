@@ -29,23 +29,23 @@ INNER JOIN pers p ON v.CODI_PERS = p.CODI_PERS  WHERE v.CODI_PERS =$P{CODIGO}]]>
 	<title>
 		<band height="72">
 			<frame>
-				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#00CC66" uuid="c2301fb3-8222-4916-9456-c8fd9d1b1a1d"/>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="78" backcolor="#CCCCCC" uuid="c2301fb3-8222-4916-9456-c8fd9d1b1a1d"/>
 				<staticText>
-					<reportElement x="20" y="20" width="334" height="43" forecolor="#FFFFFF" uuid="933a2365-6a44-4475-aa59-bdcfaf49eb09"/>
+					<reportElement x="20" y="20" width="398" height="43" isRemoveLineWhenBlank="true" forecolor="#006666" uuid="933a2365-6a44-4475-aa59-bdcfaf49eb09"/>
 					<textElement>
-						<font size="34" isBold="true"/>
+						<font size="34" isBold="true" isItalic="true"/>
 					</textElement>
-					<text><![CDATA[Vistas de la persona]]></text>
+					<text><![CDATA[Visitas de las personas]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="377" y="20" width="180" height="20" forecolor="#FFFFFF" uuid="82202824-76e2-4deb-9f59-b2be06637811"/>
+					<reportElement x="457" y="20" width="100" height="20" forecolor="#000000" uuid="82202824-76e2-4deb-9f59-b2be06637811"/>
 					<textElement textAlignment="Right">
 						<font size="14" isBold="false"/>
 					</textElement>
-					<text><![CDATA[Codigo de la persona:]]></text>
+					<text><![CDATA[Nª de persona]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="457" y="43" width="100" height="20" forecolor="#FFFFFF" uuid="7e52da40-43a7-42e2-aab8-16632fb4bbf2"/>
+					<reportElement x="479" y="43" width="78" height="20" forecolor="#000000" uuid="7e52da40-43a7-42e2-aab8-16632fb4bbf2"/>
 					<textFieldExpression><![CDATA[$P{CODIGO}]]></textFieldExpression>
 				</textField>
 			</frame>
@@ -60,32 +60,32 @@ INNER JOIN pers p ON v.CODI_PERS = p.CODI_PERS  WHERE v.CODI_PERS =$P{CODIGO}]]>
 				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="6b36c3e9-346c-4548-b9fc-a864ff38a166"/>
 			</line>
 			<staticText>
-				<reportElement mode="Opaque" x="0" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="dff9f5b6-fea4-4f29-843c-4fbc1741a869"/>
+				<reportElement mode="Opaque" x="0" y="0" width="138" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="dff9f5b6-fea4-4f29-843c-4fbc1741a869"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Nombre Lugar]]></text>
+				<text><![CDATA[Ubicacion lugar]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="138" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="e226d9f7-31ee-4a19-b129-5f158a7f7397"/>
+				<reportElement mode="Opaque" x="138" y="0" width="138" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="e226d9f7-31ee-4a19-b129-5f158a7f7397"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Fecha entrada]]></text>
+				<text><![CDATA[fecha entregada]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="276" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="5d42817b-cd3c-4e47-9d58-32e96a9b57a6"/>
+				<reportElement mode="Opaque" x="276" y="0" width="138" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="5d42817b-cd3c-4e47-9d58-32e96a9b57a6"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Fecha Salida]]></text>
+				<text><![CDATA[fecha salida]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="414" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="be80adbf-7da7-4ea7-aeee-9103a2250890"/>
+				<reportElement mode="Opaque" x="414" y="0" width="138" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="be80adbf-7da7-4ea7-aeee-9103a2250890"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Nombre de Unid.]]></text>
+				<text><![CDATA[Nombre de unidad]]></text>
 			</staticText>
 		</band>
 	</columnHeader>

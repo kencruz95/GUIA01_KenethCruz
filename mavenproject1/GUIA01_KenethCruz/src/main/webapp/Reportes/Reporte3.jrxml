@@ -27,13 +27,13 @@ WHERE CAST(`FECH_HORA_ENTR_VISI`AS DATE) BETWEEN  $P{parameter1} AND $P{paramete
 	<title>
 		<band height="72">
 			<frame>
-				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#00CC66" uuid="0f975ed2-89da-43f2-b17f-3b6d02b58929"/>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#CCCCCC" uuid="0f975ed2-89da-43f2-b17f-3b6d02b58929"/>
 				<staticText>
-					<reportElement x="175" y="0" width="289" height="43" forecolor="#FFFFFF" uuid="2552fe6e-6b59-42e0-b2a3-ce230a255bd3"/>
+					<reportElement x="175" y="0" width="289" height="43" forecolor="#009999" uuid="2552fe6e-6b59-42e0-b2a3-ce230a255bd3"/>
 					<textElement>
-						<font size="34" isBold="true"/>
+						<font size="34" isBold="true" isItalic="true"/>
 					</textElement>
-					<text><![CDATA[Visitas por rango]]></text>
+					<text><![CDATA[Visitas por fecha]]></text>
 				</staticText>
 				<textField>
 					<reportElement x="175" y="63" width="100" height="20" forecolor="#FFFFFF" uuid="c70948a5-0e69-476c-9ab0-0a684cc50a59"/>
@@ -59,35 +59,35 @@ WHERE CAST(`FECH_HORA_ENTR_VISI`AS DATE) BETWEEN  $P{parameter1} AND $P{paramete
 				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="680f9545-1ffe-4a62-a3ba-37110d0d1c0e"/>
 			</line>
 			<staticText>
-				<reportElement mode="Opaque" x="0" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="f4a608cc-32aa-4eaa-b6f7-2b4be975badd"/>
+				<reportElement mode="Opaque" x="0" y="0" width="111" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="f4a608cc-32aa-4eaa-b6f7-2b4be975badd"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Codigo Uni. Org.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="111" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="ece8451e-fa24-40b9-986d-69fbcbba55c0"/>
+				<reportElement mode="Opaque" x="111" y="0" width="111" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="ece8451e-fa24-40b9-986d-69fbcbba55c0"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Nombre Unidad]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="222" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="c61e15f7-6d44-40d8-b17a-e4a217b70387"/>
+				<reportElement mode="Opaque" x="222" y="0" width="111" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="c61e15f7-6d44-40d8-b17a-e4a217b70387"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Fecha entrada]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="333" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="5bb65109-eb02-4ff7-acbc-5e538d005e21"/>
+				<reportElement mode="Opaque" x="333" y="0" width="111" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="5bb65109-eb02-4ff7-acbc-5e538d005e21"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Fecha Salida]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="444" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="63e73b5f-b682-41e6-9325-9877bdb72b90"/>
+				<reportElement mode="Opaque" x="444" y="0" width="111" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="63e73b5f-b682-41e6-9325-9877bdb72b90"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
