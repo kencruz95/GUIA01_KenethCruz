@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
-    <title>GUIA 1 POO</title>
+    <title>GUIA 01 - POO</title>
      
      <!-- Normalize CSS -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -94,7 +94,7 @@
                 
                 
                 <br><br>
-                <form class="" method="post" action="DatosReportes/report2.jsp" target="_blank">
+                <form class="" method="post" action="DatosReportes/reporte2.jsp" target="_blank">
                     
                 <div class="row">
                     <div class="input-field col s12">

@@ -14,38 +14,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
-    <script type="text/javascript">
-           $(document).ready(function () {
-               $("#frmPiezas").validate();
-           });
-    </script>
-    
-    <script type="text/javascript">
-            $(document).ready(function () {   // Esta parte del código se ejecutará automáticamente cuando la página esté lista.
-                $("#boton").click(function () {     // Con esto establecemos la acción por defecto de nuestro botón de enviar.
-                    if (validaForm()) {                               // Primero validará el formulario.
-                        var cursBton = $(this).val();
-                        var form = $(this).closest("form");
-                        $.ajax({
-                            type: "POST",
-                            url: form.attr('action'),
-                            data: form.serialize() + "&cursBton=" + cursBton,
-                            success: function (response) {
-                                alert('OK');
-                                location.reload();
-                            }
-                        });
-                        event.preventDefault();
-                    }
-                    else {
-                        $("#frmPiezas").submit(function () {
-                            return false;
-                        });
-                    }
-                });
-            });</script>
-    
-    <title>MANTENIMIENTO PIEZAS</title>
+    <title>GUIA 01 - POO</title>
     
      <!-- Normalize CSS -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -125,28 +94,22 @@
                 
                 
                 <br><br>
-                <form class="col s12" name="frmPiezas" id="frmPiezas" method="POST" action="PiezasServ">
-                    <input type="hidden" name="CodiPiez" value="${CodiPiez}"/>
-                    
-               
+                <form class="col s12"method="post" action="DatosReportes/reporte3.jsp"target="_blank">
                 <div class="row">
                     <div class="input-field col s12">
                         <center>Selecione el rango de fechas :</center>
                         <br><br>
                             <div class="row">
-                    <div class="input-field col s6">
-                        <label for="fech_ini">Fecha inicio</label>
-                        <br>
-                        <input name="fech_ini" type="date" class="validate"  value="${fech_ini}"/>
-                        
-                    </div>
-                        
-                    <div class="input-field col s6">
-                        <label for="fech_fin">Fecha final</label>
-                        <br>
-                        <input name="fech_fin" type="date" class="validate"  value="${fech_fin}"/>
-                        
-                    </div>
+                                <div class="input-field col s6">
+                                    <label for="date1">Fecha Inicio</label>
+                                    <br>
+                                    <input type="date"class="form-control" name="date1" id="date1">
+                                </div>
+                                <div class="input-field col s6">
+                                    <label for="date2">Fecha Fin</label>
+                                    <br>
+                                    <input type="date"class="form-control" name="date2" id="date2">
+                                </div>  
                 </div>
                     </div>
                 </div>

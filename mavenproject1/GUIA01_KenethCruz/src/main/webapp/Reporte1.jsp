@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>MANTENIMIENTO PIEZAS</title>
+    <title>GUIA 01 - POO</title>
     
      <!-- Normalize CSS -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -93,7 +93,7 @@
                 
                 
                 <br><br>
-                <form class="" method="post" action="DatosReportes/report1.jsp" target="_blank">
+                <form class="" method="post" action="DatosReportes/reporte1.jsp" target="_blank">
                 <div class="row">
                     <div class="input-field col s12">
                         <center>Selecione la unidad organizativa :</center>
